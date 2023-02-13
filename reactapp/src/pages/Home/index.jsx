@@ -36,7 +36,7 @@ export function Home() {
     <div className='container'>
       
       <header>
-        <h1>Lista de Presença</h1>
+        <h1>Attendance List</h1>
         <div>
           <strong><small>{ user.name }</small></strong>
           <img src={ user.avatar } alt="profile-photo" />
@@ -45,14 +45,14 @@ export function Home() {
 
       <input 
         type="text" 
-        placeholder="Digite seu nome"
+        placeholder="Type your name"
         onChange={e => setStudentName(e.target.value)}  
       />
 
       <button 
         type="button"
         onClick={handleAddStudent}>
-        Adicionar
+        Save
       </button>
 
       {
